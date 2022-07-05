@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -19,16 +26,22 @@ a:hover {
   text-decoration: none;
 }
 #header {
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
   position: relative;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  /* z-index: 997; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-position: center;
-  /* overflow-y: auto; */
 }
 #header * {
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
 
@@ -60,13 +73,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 #header .social-links {
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 #header .social-links a {
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
   line-height: 1;
@@ -95,23 +116,35 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 15px;
   }
   #header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #body{
       background-position: 100% ;
-      /* overflow: ; */
   }
-  /* #header{
-      background-position: 100% ;
-      
-  } */
+ 
   .hcrdiv{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       
-      align-items: center;
+      -webkit-box-align: center;
+      
+          -ms-flex-align: center;
+      
+              align-items: center;
    
       /* position: relative;
       top: 20em; */
@@ -125,28 +158,35 @@ h1, h2, h3, h4, h5, h6 {
       background-position: 100%  ;
       
   }
-  /* #header{
-      background-position: 85%  ;
-      
-  } */
+  
  
 }
 @media (max-width:997px){
+
   .hcrdiv {
-     background-color: rgba(23, 22, 22, 0.5);
-     /* background-color: rgba(39, 41, 40, 0.5); */
+     background-color: rgba(23, 22, 22, 0.3);
+
      padding: 3em;
-     /* padding-top: 11em;
-     padding-bottom: 5em; */
+
      
      
   }
+  
   body{
     background-position: 100%  ;
     
-}
+  }
 
 }
+/* @media (max-width:497px){
+  header .autoinput{
+    display: none;
+  }
+  header .defaultinput{
+    display: block;
+  }
+
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -154,86 +194,98 @@ h1, h2, h3, h4, h5, h6 {
 /**
 * Desktop Navigation 
 */
-#nvdiv{
-
-z-index: 99;
-transition: all 0s ease 0s;
-position: relative;
 
 
-}
 .navbar {
-padding: 0;
-padding-left: 5px;
-margin-top: 35px;
-
-/* z-index: 99; */
+  padding: 0;
+  padding-left: 5px;
+  margin-top: 35px;
+  -webkit-transition: all 0s ease-in-out 0s;
+  -o-transition: all 0s ease-in-out 0s;
+  transition: all 0s ease-in-out 0s;
+  z-index: 99999;
 
 
 }
 .navbar ul {
-margin: 0;
-padding: 0;
-display: flex;
-list-style: none;
-align-items: center;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navbar li {
-position: relative;
+  position: relative;
 }
 .navbar li + li {
-margin-left: 30px;
+  margin-left: 30px;
 }
 .navbar a, .navbar a:focus {
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0;
-font-family: "Poppins", sans-serif;
-font-size: 16px;
-font-weight: 400;
-color: rgba(255, 255, 255, 0.7);
-white-space: nowrap;
-transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  white-space: nowrap;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 .navbar a i, .navbar a:focus i {
-font-size: 12px;
-line-height: 0;
-margin-left: 5px;
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
 }
 .navbar a:before {
-content: "";
-position: absolute;
-width: 0;
-height: 2px;
-bottom: -4px;
-left: 0;
-background-color: #18d26e;
-visibility: hidden;
-width: 0px;
-transition: all 0.3s ease-in-out 0s;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #18d26e;
+  visibility: hidden;
+  width: 0px;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
-visibility: visible;
-width: 25px;
+  visibility: visible;
+  width: 25px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-color: #fff;
+  color: #fff;
 }
 
 /**
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-color: #fff;
-font-size: 28px;
-cursor: pointer;
-display: none;
-line-height: 0;
-transition: 0.5s;
-position: fixed;
-right: 15px;
-top: 15px;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: fixed;
+  right: 15px;
+  top: 15px;
 
 }
 
@@ -249,44 +301,49 @@ top: 15px;
 }
 }
 .navbar-mobile {
-position: fixed;
-overflow: hidden;
-top: 0;
-right: 0;
-left: 0;
-bottom: 0;
-background: rgba(0, 0, 0, 0.9);
-transition: 0.3s;
-z-index: 999;
-margin-top: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 999;
+  margin-top: 0;
 /* height: 500px; */
 }
 .navbar-mobile .mobile-nav-toggle {
-position: absolute;
-top: 15px;
-right: 15px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
 }
 .navbar-mobile ul {
-display: block;
-position: absolute;
-top: 55px;
-right: 15px;
-bottom: 45px;
-left: 15px;
-padding: 10px 0;
-overflow-y: auto;
-transition: 0.3s;
-border: 2px solid rgba(255, 255, 255, 0.2);
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 45px;
+  left: 15px;
+  padding: 10px 0;
+  overflow-y: auto;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  z-index: 99999;
 }
 .navbar-mobile li {
-padding: 12px 20px;
+  padding: 12px 20px;
 }
 .navbar-mobile li + li {
-margin: 0;
+  margin: 0;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
-font-size: 16px;
-position: relative;
+  font-size: 16px;
+  position: relative;
 }
 
 
@@ -296,13 +353,11 @@ position: relative;
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
-  /* position: absolute; */
   width: 100%;
-  /* top: 140px; */
-  /* bottom: 100%; */
-  /* opacity: 0; */
+  -webkit-transition: ease-in-out 0.4s;
+  -o-transition: ease-in-out 0.4s;
   transition: ease-in-out 0.4s;
-  /* z-index: 2; */
+  
 }
 section.section-show {
   top: 100px;
@@ -358,13 +413,21 @@ section .container {
 # About
 --------------------------------------------------------------*/
 .hexouter{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  transition: border 4s ease-in-out 1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: border 4s ease-in-out 0.5s;
+  -o-transition: border 4s ease-in-out 0.5s;
+  transition: border 4s ease-in-out 0.5s;
 
 
 }
 .hex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
  
   position: relative;
@@ -398,8 +461,12 @@ section .container {
 }
 .about-me .content ul li {
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .about-me .content ul strong {
   margin-right: 10px;
@@ -443,6 +510,8 @@ section .container {
 .skills .progress-bar {
   width: 1px;
   height: 10px;
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
   transition: 0.9s;
   background-color: #18d26e;
 }
@@ -452,10 +521,16 @@ section .container {
 # Interests
 --------------------------------------------------------------*/
 .interests .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
   background: rgba(255, 255, 255, 0.08);
+  -webkit-transition: ease-in-out 0.3s;
+  -o-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
 }
 .interests .icon-box i {
@@ -549,6 +624,8 @@ section .container {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 .services .icon-box .icon {
@@ -557,12 +634,21 @@ section .container {
   height: 64px;
   background: #18d26e;
   border-radius: 5px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 20px;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 .services .icon-box .icon i {
   color: #fff;
@@ -577,8 +663,11 @@ section .container {
   width: 100%;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 5px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
+  -webkit-transform: translateZ(-1px);
+          transform: translateZ(-1px);
 }
 .services .icon-box h4 {
   font-weight: 700;
@@ -636,6 +725,8 @@ section .container {
   color: #fff;
   background: rgba(255, 255, 255, 0.1);
   margin: 0 3px 10px 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
@@ -646,6 +737,8 @@ section .container {
   margin-right: 0;
 }
 .portfolio .portfolio-wrap {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -660,6 +753,8 @@ section .container {
   right: 30px;
   top: 30px;
   bottom: 30px;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
@@ -673,11 +768,22 @@ section .container {
   bottom: 0;
   text-align: center;
   z-index: 3;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .portfolio .portfolio-wrap .portfolio-info::before {
   display: block;
@@ -689,6 +795,8 @@ section .container {
   left: 35px;
   border-top: 3px solid #fff;
   border-left: 3px solid #fff;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -702,6 +810,8 @@ section .container {
   right: 35px;
   border-bottom: 3px solid #fff;
   border-right: 3px solid #fff;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
@@ -726,6 +836,8 @@ section .container {
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .portfolio .portfolio-wrap .portfolio-links a:hover {
@@ -770,26 +882,11 @@ section .container {
  }
  .contact .controls .form-control:focus{
   border-color: #4fc385;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
  }
-/* 
-/* .............................. */
-/* @-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}  */
+
+
  /*--------------------------------------------------------------
 # Credits
 --------------------------------------------------------------*/
@@ -813,8 +910,19 @@ section .container {
 }
 .credits a {
   color: #18d26e;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 .credits a:hover {
   color: #fff;
+}
+
+
+/* ......Footer...... */
+@media (max-width:997px){
+
+  footer h6{
+    display: none;
+  }
 }
